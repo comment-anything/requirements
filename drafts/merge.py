@@ -14,7 +14,7 @@ class Section:
         output = ""
         for a_sections in sections_array:
             if a_sections.main_section not in written_main_sections:
-                output += "# " + a_sections.main_section + "\n\n"
+                output += "\n# " + a_sections.main_section + "\n\n"
                 written_main_sections.add(a_sections.main_section)
             output += a_sections.markdown()
         return output

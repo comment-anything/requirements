@@ -1,3 +1,4 @@
+
 # Header
 
 
@@ -11,6 +12,7 @@
 
 
 ## Abstract
+
 
 # Introduction
 
@@ -32,9 +34,11 @@ Effective organization will be achieved using prevailing software management too
 Each group member has committed to being team leader for a phase of the project. That team leader will create the repository on our GitHub Organization's GitHub page and will communicate with the group to encourage all members to contribute to the project.
 
 
+
 # Application Domain
 
-The application domain of Comment Anywhere is internet communication services. More specifically, the domain is internet users commenting and viewing comments about web pages. # Initial Business Model
+The application domain of Comment Anywhere is internet communication services. More specifically, the domain is internet users commenting and viewing comments about web pages. 
+# Initial Business Model
 
 
 ## Operating Environment
@@ -44,6 +48,7 @@ The Front Ends will run in the browser engines of Chrome, Firefox, and other bro
 
 
 ## Use Case Diagrams
+
 
 # Initial Requirements
 
@@ -78,9 +83,12 @@ Some of the documentation files that will be created include:
 - The writing center will review this project report.
 
 
+
 # Testing Revisions
 
+
 # References
+
 
 # Appendix
 
