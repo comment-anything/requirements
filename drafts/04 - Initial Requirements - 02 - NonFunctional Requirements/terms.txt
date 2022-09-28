@@ -1,0 +1,14 @@
+-- Terms
+
+- Nonfunctional Requirement
+
+Properties of the product such as platform constraints, response times, or reliability. [1]
+
+
+
+
+-- References
+
+[1] Schach, Stephen R., Object-Oriented and Classical Software Engineering, 8th edition.
+
+

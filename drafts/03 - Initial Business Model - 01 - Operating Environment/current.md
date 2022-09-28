@@ -1,0 +1,1 @@
+The Front Ends will run in the browser engines of Chrome, Firefox, and other browsers that may support Chromium or Firefox based extensions. The Back End and Database will be configured to run in one or more Virtual Machines to allow for simple deployment on a variety of cloud options.

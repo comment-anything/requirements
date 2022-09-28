@@ -1,0 +1,1 @@
+The application domain of Comment Anywhere is internet communication services. More specifically, the domain is internet users commenting and viewing comments about web pages. 
