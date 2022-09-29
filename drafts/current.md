@@ -51,7 +51,7 @@ The application domain of Comment Anywhere is internet communication services. M
 The Front End will run in the browser engines of Chrome, Firefox, and other browsers that may support Chromium or Firefox based extensions. The Back End will be configured to run at least two Virtual Machines to allow for simple deployment on a variety of cloud options. The Database and HTTP Server will run on separate Virtual Machines. 
 ## Description of Data Sources
 
-
+We will be getting many parts of our data from many different sources, first we will grab the url that the user is currently on and request the data for that webpages comment section. We will then see that request and grab the comment section from our database and display them to the user. When the user is ready, we will have the user log in to the extention. After the user enters their information into the extention we will verify if the user is actually the user as with all logins. There should be a few options for the user at this point the user can choose to either make a comment or reply to another comment, in the moderator's case they will also be able to report comments. If the user comments or reply's when the commenter posts their message to the database for the website url. If a moderator reports a comment the comment will move from the comments database to a removed comments database that only the moderators are able to see. The administrators as well as being able to do everything users and moderators can do is approve and select both global and regular moderators, they can also request and see who has approved the moderators and when for both global and local moderators. Global moderators are also able to request and see local moderators approval and time. Users can also be banned by moderators, regular moderators cana only ban users to the domain of the site they moderate while global and administrators can issue domain and full bans from all sites. When a user is banned their name is put into the domain bans database as well as where they were banned from who banned them and when.
 ## Use Case Diagrams
 
 
@@ -99,6 +99,10 @@ Some of the documentation files that will be created include:
 
 
 
+**Administrator**
+
+The highest authority of moderation can do anything a global moderator can do and see their approval to global moderator
+
 **Application Domain**
 
 The specific environment in which the product is to operate.  [3] Can be an organization, a department within an organization, or a single workspace.  [4] 
@@ -110,6 +114,10 @@ A Back End is any part of a website or software program the users do not see. It
 **Cloud**
 
 "The cloud" refers to servers that are accessed over the Internet, and the software and databases that run on those servers. Cloud servers are located in data centers all over the world. By using cloud computing, users and companies do not have to manage physical servers themselves or run software applications on their own machines.  [9] 
+
+**Comment**
+
+A line of text created by any user can be replied to by other comments ,edited for a spacific duration reported and become a removed comment
 
 **Database**
 
@@ -139,6 +147,10 @@ The Front End of a software program is everything with which the user interacts.
 
 
 
+**Global Moderator**
+
+Higher authority than a moderator can ban people from any domain or all domains can also see when a regular moderator was premoted and by who
+
 **Nonfunctional Requirement**
 
 Properties of the product such as platform constraints, response times, or reliability.  [12] 
@@ -150,6 +162,10 @@ The process of defining, documenting, and maintaining requirements in the engine
 **Server**
 
 A program which waits for a request then performs some service for the requester and which runs on a computer other than the one on which the requestor/client runs.  [7] The Server used by Comment anywhere is an HTTP server because it processes HTTP requests on the Internet. 
+
+**User**
+
+Anyone that has the browser extention installed on a browser, low level access to the program only able to comment, reply to comments and be premoted to a moderator global moderator or admin or banned by moderators and administrators either entirely or on a spacific domain.
 
 **User Interface**
 

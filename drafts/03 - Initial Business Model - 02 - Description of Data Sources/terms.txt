@@ -1,21 +1,21 @@
 -- Terms
 
-- comment
+- Comment
 
 A line of text created by any user can be replied to by other comments ,edited for a spacific duration reported and become a removed comment
 
-- user
+- User
 
 Anyone that has the browser extention installed on a browser, low level access to the program only able to comment, reply to comments and be premoted to a moderator global moderator or admin or banned by moderators and administrators either entirely or on a spacific domain.
 
-- administrator
+- Administrator
 
 The highest authority of moderation can do anything a global moderator can do and see their approval to global moderator
 
-- global moderator
+- Global Moderator
 
 Higher authority than a moderator can ban people from any domain or all domains can also see when a regular moderator was premoted and by who
 
-- moderator
+- Moderator
 
 Can do everything a user can do but can also report coments on a spacific domain and ban comments on a spacific domain.
