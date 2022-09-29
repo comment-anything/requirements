@@ -4,7 +4,7 @@
 
 ## Title Page
 
-
+Comment anything requirements Document.
 ## Instructor Comments and Evaluation
 
 
@@ -37,7 +37,7 @@ Each group member has committed to being team leader for a phase of the project.
 
 # Application Domain
 
-The application domain of Comment Anywhere is internet communication services. More specifically, the domain is internet users commenting and viewing comments about web pages. 
+The application domain of Comment Anywhere is internet communication services. More specifically, the domain is internet users commenting and viewing comments about web pages.  [1] 
 # Initial Business Model
 
 
@@ -90,12 +90,39 @@ Some of the documentation files that will be created include:
 # References
 
 
+
+ [1] - Schach, Stephen R., Object-Oriented and Classical Software Engineering, 8th edition.
+
+ [2] - Züllighoven, Heinz, Object-Oriented Construction Handbook, Chapter 6.3, 2005. https://www.sciencedirect.com/topics/computer-science/application-domain
+
+ [3] - Schach, Stephen R., Object-Oriented and Classical Software Engineering, 8th edition.
 # Appendix
 
 
 ## Technical Glossary
 
 
+
+#### Application Domain
+The specific environment in which the product is to operate.  [1] Can be an organization, a department within an organization, or a single workspace.  [2] 
+
+#### Discord
+
+
+#### Discord Webhooks
+
+
+#### Git
+
+
+#### GitHub
+
+
+#### GitHub Organization
+
+
+#### Nonfunctional Requirement
+Properties of the product such as platform constraints, response times, or reliability.  [3] 
 ## Team Details
 
 

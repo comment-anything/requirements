@@ -7,8 +7,6 @@ The specific environment in which the product is to operate. [1]
 Can be an organization, a department within an organization, or a single workspace. [2]
 
 
-
-
 -- References
 
 [1] Schach, Stephen R., Object-Oriented and Classical Software Engineering, 8th edition.
