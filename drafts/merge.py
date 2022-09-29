@@ -114,7 +114,7 @@ class Term:
         self.definition = definition_array
 
     def md(self):
-        s = "\n\n *" + self.name + "*\n"
+        s = "\n\n**" + self.name + "**\n\n"
         for part in self.definition:
             if type(part) == str:
                 s += part

@@ -21,6 +21,10 @@ We describe the results of Software Requirement Engineering in a Waterfall model
 ## Background
 
 
+Internet denizens have long found ways to have vibrant communications about a wide variety of content. In the past, more website supported these conversations through comment sections, but many have closed their comments in recent years. Instead, the avenues of discourse have become social media sites such as Facebook, Reddit, and bulletin board style forums, decoupling the conversation from the content itself.
+
+Tying comments to social media posts rather than the content has the effect of fragmenting the conversation and diluting information available to viewers. Evidence exists that users spend less time on webpages without comments and report a worse user experience.  [2] We infer that there is a market for comments tied to content rather than posts and an application that can bring comments to the content could capture monetizable user engagement.
+
 ## Objective
 
 
@@ -38,13 +42,13 @@ Each group member has committed to being team leader for a phase of the project.
 
 # Application Domain
 
-The application domain of Comment Anywhere is internet communication services. More specifically, the domain is internet users commenting and viewing comments about web pages.  [2] 
+The application domain of Comment Anywhere is internet communication services. More specifically, the domain is internet users commenting and viewing comments about web pages.  [3] 
 # Initial Business Model
 
 
 ## Operating Environment
 
-The Front Ends will run in the browser engines of Chrome, Firefox, and other browsers that may support Chromium or Firefox based extensions. The Back End and Database will be configured to run in one or more Virtual Machines to allow for simple deployment on a variety of cloud options.
+The Front End will run in the browser engines of Chrome, Firefox, and other browsers that may support Chromium or Firefox based extensions. The Back End will be configured to run at least two Virtual Machines to allow for simple deployment on a variety of cloud options. The Database and HTTP Server will run on separate Virtual Machines. 
 ## Description of Data Sources
 
 
@@ -88,17 +92,6 @@ Some of the documentation files that will be created include:
 # Testing Revisions
 
 
-# References
-
-
-
- [1] - https://www.javatpoint.com/software-engineering-requirement-engineering
-
- [2] - Schach, Stephen R., Object-Oriented and Classical Software Engineering, 8th edition.
-
- [3] - Züllighoven, Heinz, Object-Oriented Construction Handbook, Chapter 6.3, 2005. https://www.sciencedirect.com/topics/computer-science/application-domain
-
- [4] - Schach, Stephen R., Object-Oriented and Classical Software Engineering, 8th edition.
 # Appendix
 
 
@@ -106,29 +99,65 @@ Some of the documentation files that will be created include:
 
 
 
- *Application Domain*
-The specific environment in which the product is to operate.  [2] Can be an organization, a department within an organization, or a single workspace.  [3] 
+**Application Domain**
 
- *Discord*
+The specific environment in which the product is to operate.  [3] Can be an organization, a department within an organization, or a single workspace.  [4] 
+
+**Back End **
+
+A Back End is any part of a website or software program the users do not see. It contrasts with the Front End, which refers to a program or website's user interface.
+
+**Cloud**
+
+"The cloud" refers to servers that are accessed over the Internet, and the software and databases that run on those servers. Cloud servers are located in data centers all over the world. By using cloud computing, users and companies do not have to manage physical servers themselves or run software applications on their own machines.  [9] 
+
+**Database**
+
+A database is an organized collection of structured information, or data, typically stored electronically in a computer system. A database is usually controlled by a database management system (DBMS). Together, the data and the DBMS, along with the applications that are associated with them, are referred to as a database system, often shortened to just database.Data within the most common types of databases in operation today is typically modeled in rows and columns in a series of tables to make processing and data querying efficient. The data can then be easily accessed, managed, modified, updated, controlled, and organized. Most databases use structured query language (SQL) for writing and querying data.  [8] 
+
+**Discord**
 
 
- *Discord Webhooks*
+
+**Discord Webhooks**
 
 
- *Git*
+
+**Front End**
+
+The Front End of a software program is everything with which the user interacts. From a user standpoint, Front End is synonymous with the User Interface. The Front End of Comment Anywhere is the Browser Extension.  [11] 
+
+**Git**
 
 
- *GitHub*
+
+**GitHub**
 
 
- *GitHub Organization*
+
+**GitHub Organization**
 
 
- *Nonfunctional Requirement*
-Properties of the product such as platform constraints, response times, or reliability.  [4] 
 
- *Requirements Engineering*
+**Nonfunctional Requirement**
+
+Properties of the product such as platform constraints, response times, or reliability.  [12] 
+
+**Requirements Engineering**
+
 The process of defining, documenting, and maintaining requirements in the engineering design process.  [1] 
+
+**Server**
+
+A program which waits for a request then performs some service for the requester and which runs on a computer other than the one on which the requestor/client runs.  [7] The Server used by Comment anywhere is an HTTP server because it processes HTTP requests on the Internet. 
+
+**User Interface**
+
+Also called a "UI" or "interface", a User Interface is the means in which a person controls a software application or hardware device.  [10] 
+
+**Virtual Machine**
+
+Also called a Container, a Virtual Machine is a compute resource that uses software instead of a physical computer to run programs and deploy apps. One or more virtual "guest" machines run on a physical "host" machine. Each virtual machine runs its own operating system and functions separately from the other VMs, even when they are all running on the same host.  [5] 
 ## Team Details
 
 
@@ -137,3 +166,31 @@ The process of defining, documenting, and maintaining requirements in the engine
 
 ## Report from Writing Center
 
+
+# References
+
+
+
+ [1] - https://www.javatpoint.com/software-engineering-requirement-engineering
+
+ [2] - https://www.poynter.org/ethics-trust/2021/dont-read-the-comments-for-news-sites-it-might-be-worth-the-effort/
+
+ [3] - Schach, Stephen R., Object-Oriented and Classical Software Engineering, 8th edition.
+
+ [4] - Züllighoven, Heinz, Object-Oriented Construction Handbook, Chapter 6.3, 2005. https://www.sciencedirect.com/topics/computer-science/application-domain
+
+ [5] - https://www.vmware.com/topics/glossary/content/virtual-machine.html
+
+ [6] - https://techterms.com/definition/backend
+
+ [7] - http://www.catb.org/jargon/html/S/server.html
+
+ [8] - https://www.oracle.com/database/what-is-database/
+
+ [9] - https://www.cloudflare.com/learning/cloud/what-is-the-cloud/
+
+ [10] - https://techterms.com/definition/frontend 
+
+ [11] - https://techterms.com/definition/user_interface
+
+ [12] - Schach, Stephen R., Object-Oriented and Classical Software Engineering, 8th edition.

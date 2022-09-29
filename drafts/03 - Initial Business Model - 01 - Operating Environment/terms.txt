@@ -1,0 +1,55 @@
+-- Terms
+
+- Cloud
+
+"The cloud" refers to servers that are accessed over the Internet, and the software and databases that run on those servers. Cloud servers are located in data centers all over the world. By using cloud computing, users and companies do not have to manage physical servers themselves or run software applications on their own machines. [5]
+
+- User Interface
+
+Also called a "UI" or "interface", a User Interface is the means in which a person controls a software application or hardware device. [6] 
+
+
+- Front End
+
+The Front End of a software program is everything with which the user interacts. From a user standpoint, Front End is synonymous with the User Interface. The Front End of Comment Anywhere is the Browser Extension. [7]
+
+
+
+- Back End 
+
+A Back End is any part of a website or software program the users do not see. It contrasts with the Front End, which refers to a program or website's user interface.
+
+
+- Database
+
+A database is an organized collection of structured information, or data, typically stored electronically in a computer system. A database is usually controlled by a database management system (DBMS). Together, the data and the DBMS, along with the applications that are associated with them, are referred to as a database system, often shortened to just database.
+
+Data within the most common types of databases in operation today is typically modeled in rows and columns in a series of tables to make processing and data querying efficient. The data can then be easily accessed, managed, modified, updated, controlled, and organized. Most databases use structured query language (SQL) for writing and querying data. [4]
+
+
+
+- Server
+
+A program which waits for a request then performs some service for the requester and which runs on a computer other than the one on which the requestor/client runs. [3]
+
+The Server used by Comment anywhere is an HTTP server because it processes HTTP requests on the Internet. 
+
+- Virtual Machine
+
+Also called a Container, a Virtual Machine is a compute resource that uses software instead of a physical computer to run programs and deploy apps. One or more virtual "guest" machines run on a physical "host" machine. Each virtual machine runs its own operating system and functions separately from the other VMs, even when they are all running on the same host. [1]
+
+-- References 
+
+[1] https://www.vmware.com/topics/glossary/content/virtual-machine.html
+
+[2] https://techterms.com/definition/backend
+
+[3] http://www.catb.org/jargon/html/S/server.html
+
+[4] https://www.oracle.com/database/what-is-database/
+
+[5] https://www.cloudflare.com/learning/cloud/what-is-the-cloud/
+
+[6] https://techterms.com/definition/frontend 
+
+[7] https://techterms.com/definition/user_interface
