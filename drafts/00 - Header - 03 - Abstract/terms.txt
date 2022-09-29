@@ -1,0 +1,11 @@
+
+-- Terms
+
+- Requirements Engineering
+
+The process of defining, documenting, and maintaining requirements in the engineering design process. [1]
+
+
+-- References
+
+[1] - https://www.javatpoint.com/software-engineering-requirement-engineering

@@ -14,6 +14,7 @@ Comment anything requirements Document.
 ## Abstract
 
 
+We describe the results of Software Requirement Engineering in a Waterfall model as applied to our proposed Software Product, Comment Anywhere. In this document, the requirements of the product are developed. We begin by addressing the background, objective, and team details. We then explore the Application Domain, Operating Requirements, and describe Data Sources and Use Cases. Finally, we explicate the functional and nonfunctional requirements of Comment Anywhere. 
 # Introduction
 
 
@@ -37,7 +38,7 @@ Each group member has committed to being team leader for a phase of the project.
 
 # Application Domain
 
-The application domain of Comment Anywhere is internet communication services. More specifically, the domain is internet users commenting and viewing comments about web pages.  [1] 
+The application domain of Comment Anywhere is internet communication services. More specifically, the domain is internet users commenting and viewing comments about web pages.  [2] 
 # Initial Business Model
 
 
@@ -91,11 +92,13 @@ Some of the documentation files that will be created include:
 
 
 
- [1] - Schach, Stephen R., Object-Oriented and Classical Software Engineering, 8th edition.
+ [1] - https://www.javatpoint.com/software-engineering-requirement-engineering
 
- [2] - Züllighoven, Heinz, Object-Oriented Construction Handbook, Chapter 6.3, 2005. https://www.sciencedirect.com/topics/computer-science/application-domain
+ [2] - Schach, Stephen R., Object-Oriented and Classical Software Engineering, 8th edition.
 
- [3] - Schach, Stephen R., Object-Oriented and Classical Software Engineering, 8th edition.
+ [3] - Züllighoven, Heinz, Object-Oriented Construction Handbook, Chapter 6.3, 2005. https://www.sciencedirect.com/topics/computer-science/application-domain
+
+ [4] - Schach, Stephen R., Object-Oriented and Classical Software Engineering, 8th edition.
 # Appendix
 
 
@@ -103,26 +106,29 @@ Some of the documentation files that will be created include:
 
 
 
-#### Application Domain
-The specific environment in which the product is to operate.  [1] Can be an organization, a department within an organization, or a single workspace.  [2] 
+ *Application Domain*
+The specific environment in which the product is to operate.  [2] Can be an organization, a department within an organization, or a single workspace.  [3] 
 
-#### Discord
-
-
-#### Discord Webhooks
+ *Discord*
 
 
-#### Git
+ *Discord Webhooks*
 
 
-#### GitHub
+ *Git*
 
 
-#### GitHub Organization
+ *GitHub*
 
 
-#### Nonfunctional Requirement
-Properties of the product such as platform constraints, response times, or reliability.  [3] 
+ *GitHub Organization*
+
+
+ *Nonfunctional Requirement*
+Properties of the product such as platform constraints, response times, or reliability.  [4] 
+
+ *Requirements Engineering*
+The process of defining, documenting, and maintaining requirements in the engineering design process.  [1] 
 ## Team Details
 
 
