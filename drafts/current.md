@@ -14,7 +14,7 @@ Comment anything requirements Document.
 ## Abstract
 
 
-We describe the results of Software Requirement Engineering in a Waterfall model as applied to our proposed Software Product, Comment Anywhere. In this document, the requirements of the product are developed. We begin by addressing the background, objective, and team details. We then explore the Application Domain, Operating Requirements, and describe Data Sources and Use Cases. Finally, we explicate the functional and nonfunctional requirements of Comment Anywhere. 
+We describe the results of Software Requirement Engineering in a Waterfall model as applied to our proposed Software Product, Comment Anywhere, a browser extension for commenting on webpages. In this document, the requirements of the product are developed. We begin by addressing the background, objective, and team details. We then explore the Application Domain, Operating Requirements, and describe Data Sources and Use Cases. Finally, we explicate the functional, nonfunctional, and documentary requirements of Comment Anywhere. 
 # Introduction
 
 
@@ -27,17 +27,71 @@ Tying comments to social media posts rather than the content has the effect of f
 
 ## Objective
 
+The objective of this project is to create a web based browser extention to allow people to comment on websites based on their url. This is useful for websites that dont have comment sections or that are intentionally  misleading for people to make their own opinions out of without the pages author having a say. We will also have a automatic antimation system for spam comments and comments to harmful websites as well as a volentary moderation team to moderate these comments Wich will have a special ui for themselves as well for any administrators for the reporting and removing process of these comments and users. We hope to create a product that is able to hit the market and become the new way to comment on the internet free from those that want to stop the free flow of information.
+\
+\
+\
+\
+
+
+ --- 
+
+
+
+**Additons to Part of this section**
+
+\
+\
+\ 
+\
+
+
+
+This Product serves not only the end user, but the Proprietors of Comment Anywhere. Those individuals, who effectively contracted us to create this product, are a team of student developers looking to launch a startup. 
+
+Their business plan is part of a four phase roll out. This product needs to get the Comment Anywhere team to Phase 1 of their roll out, but also needs to set them up for Phase 2. 
+
+A brief summary of those phases is as follows:
+
+**Phase 1: Initial Rollout**
+
+    - Less than 50,000 monthly users
+    - Goal is to garner interest and goodwill
+    - Engage with users, listen to feedback, implement feature requests
+
+**Phase 2: "Buy Me a Coffee"**
+
+    - Less than 200,000 monthly users
+    - Continue to build interest and goodwill
+    - Capitalize on good will to offset costs
+
+**Phase 3: Good Place to Advertise**
+
+    - Roll out ad purchasing system
+    - Intersperse ads with comments on relevant content like other companies do with search engines and other comment pages.
+    - Scale
+
+
+Targeting Phase 1 influences functional and nonfunctional requirements around maintenability, scalability, and deployability. The Comment Anywhere team will have to be able to scale and continue to add features and develop this product while keeping costs as low as possible. They must have the core of a good database and moderation interface that they can improve upon as the product continues to develop.
+
+
 
 ## Team Details & Dynamics
 
-Communication, Organization, and Commitment are the tools we need to complete this project.
+Our team is git-committed and document driven with an eye to the business plan.
 
-Discussions will be conducted in the project's Discord server. Additionally, Discord Webhooks will provide notifications whenever work is done on the source code.
+Our development strategy is one of flexibile independence that allows all members to modify all code and prose, without clearing everything all the time. The policy is to merge all pull requests if they have no conflicts and pass integration tests. At this stage, it is better to roll back a merge than to stagnate. Just like our Product, Comment Anywhere, team members have freedom and the responsibility that comes with it. There can be no excessive emotional ownership of code or prose; we must change and improve each other's work, we must proofread and unit test.
 
-Effective organization will be achieved using prevailing software management tools. Git can track versions and handle changes merged from multiple branches. GitHub provides access to a strong Issue system which we will use to communicate about project needs. 
+To ensure all our talents are brought to bear we have to bring each other up to speed. We will make effort to assist each other in the learning of new technologies. We will comment in and on our work constantly, creating guides for using and developing our features.
 
-Each group member has committed to being team leader for a phase of the project. That team leader will create the repository on our GitHub Organization's GitHub page and will communicate with the group to encourage all members to contribute to the project.
+Every group member has committed to being the Team Leader for a portion of the project.
 
+| Team Leader      | Phase          |
+|------------------|----------------|
+| Robert Krency    | Requirements   |
+| Frank Bedekovich | Analysis       |
+| Karl Miller      | Design         |
+| Luke Bates       | Implementation |
 
 
 # Application Domain
@@ -59,6 +113,39 @@ We will be getting many parts of our data from many different sources, first we 
 
 
 ## Functional Requirements
+
+
+Comment Anywhere has functional requirements for the user.
+
+
+- Getting Comments
+
+The User must be able to request comments from the Server by clicking the extension icon in their browser. The Server must be able to serve the User comments related to that URL. The Browser Extension must be able to display those comments to the User.
+
+- Registering
+
+The User must be able to register a new account from the user interface in the drop down portion of the browser extension. The Server must be able to validate that the User does not already exist and that their password is of sufficient strength, then either add that User to the Database or tell the User their was a problem with registration.
+
+- Logging In
+
+The User must be able to log into an account from the user interface in the drop down portion of the browser extension. The Server must verify whether the User has supplied the correct credentials. The Server must be able to track whether an HTTP Request is coming from a logged in user.
+
+- Posting Comments
+
+A logged-in User must be able to post a new comment. The Server must be able to add that Comment to the comment data for the URL the User is commenting on, if the user is permitted to comment on that page.
+
+- Reporting
+
+A logged-in User must be able to report a rule-breaking comment. The Server must be able to track which comments require moderation action.
+
+- Moderating
+
+A Domain Moderator or Global Moderator must be able to view all comments that have been flagged by Users as rule breaking. They must be able to remove rule breaking comments or clear flags if no action is required. 
+
+- Banning
+
+....
+
 
 
 ## NonFunctional Requirements
@@ -91,6 +178,14 @@ Some of the documentation files that will be created include:
 
 # Testing Revisions
 
+This document underwent several phases of testing. The first phase was unit testing during development, when the document was broken into portions for each section. Each unit consisted of a section's content, associated terms, and references. Every team member reviewed each section in isolation many times and improved on the content, references and glossary before the document was combined into an initial rough draft. 
+
+The rough draft was continuously integration tested by running a merge script which assembled a markdown file by combining the text, term, and reference components. The document was evaluated as a whole and improvements were made on component sections to optimize their performance in the rough draft. 
+
+After a satisfactory rough draft was produced, the markdown document was copied into Word for quality assurance. Every team member participated in spellchecking, formatting, and adding some additional content in the final word document. 
+
+Finally, we simulated an acceptance test by taking the document to the Writing Center for review. We made some minor revisions in response to test results. 
+
 
 # Appendix
 
@@ -107,7 +202,7 @@ The highest authority of moderation can do anything a global moderator can do an
 
 The specific environment in which the product is to operate.  [3] Can be an organization, a department within an organization, or a single workspace.  [4] 
 
-**Back End **
+**Back End**
 
 A Back End is any part of a website or software program the users do not see. It contrasts with the Front End, which refers to a program or website's user interface.
 

@@ -1,9 +1,15 @@
-Communication, Organization, and Commitment are the tools we need to complete this project.
+Our team is git-committed and document driven with an eye to the business plan.
 
-Discussions will be conducted in the project's Discord server. Additionally, Discord Webhooks will provide notifications whenever work is done on the source code.
+Our development strategy is one of flexibile independence that allows all members to modify all code and prose, without clearing everything all the time. The policy is to merge all pull requests if they have no conflicts and pass integration tests. At this stage, it is better to roll back a merge than to stagnate. Just like our Product, Comment Anywhere, team members have freedom and the responsibility that comes with it. There can be no excessive emotional ownership of code or prose; we must change and improve each other's work, we must proofread and unit test.
 
-Effective organization will be achieved using prevailing software management tools. Git can track versions and handle changes merged from multiple branches. GitHub provides access to a strong Issue system which we will use to communicate about project needs. 
+To ensure all our talents are brought to bear we have to bring each other up to speed. We will make effort to assist each other in the learning of new technologies. We will comment in and on our work constantly, creating guides for using and developing our features.
 
-Each group member has committed to being team leader for a phase of the project. That team leader will create the repository on our GitHub Organization's GitHub page and will communicate with the group to encourage all members to contribute to the project.
+Every group member has committed to being the Team Leader for a portion of the project.
 
+| Team Leader      | Phase          |
+|------------------|----------------|
+| Robert Krency    | Requirements   |
+| Frank Bedekovich | Analysis       |
+| Karl Miller      | Design         |
+| Luke Bates       | Implementation |
 
