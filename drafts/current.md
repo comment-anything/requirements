@@ -67,7 +67,7 @@ Every group member has committed to being the Team Leader for a portion of the p
 
 # Application Domain
 
-The application domain of Comment Anywhere is internet communication services. More specifically, the domain is internet users commenting and viewing comments about web pages.  [6] 
+The application domain of Comment Anywhere is internet communication services. More specifically, the domain is internet users commenting and viewing comments about web pages.
 # Initial Business Model
 
 
@@ -86,62 +86,98 @@ We will be getting many parts of our data from many different sources, first we 
 ## Functional Requirements
 
 
-Comment Anywhere has functional requirements for the user.
-
+Comment Anywhere has a number of functional requirements necessary to meet our objective.
 
 - Getting Comments
 
-The User must be able to request comments from the Server by clicking the extension icon in their browser. The Server must be able to serve the User comments related to that URL. The Browser Extension must be able to display those comments to the User.
+A Viewer must be able to request comments from the Server by clicking the extension icon in their browser. The Server must be able to serve the User comments related to that URL. The Browser Extension must be able to display those comments to the User.
+
+Logged In Users may also receive comments that are hidden by default to non-logged in Viewers. 
 
 - Registering
 
-The User must be able to register a new account from the user interface in the drop down portion of the browser extension. The Server must be able to validate that the User does not already exist and that their password is of sufficient strength, then either add that User to the Database or tell the User their was a problem with registration.
+A Viewer must be able to register a new account from the user interface in the drop down portion of the browser extension. The Server must be able to validate that the User does not already exist and that their password is of sufficient strength, then either add that User to the Database or tell the User their was a problem with registration.
 
 - Logging In
 
 The User must be able to log into an account from the user interface in the drop down portion of the browser extension. The Server must verify whether the User has supplied the correct credentials. The Server must be able to track whether an HTTP Request is coming from a logged in user.
 
+- Settings
+
+The User must be able to change their settings locally to control whether they want to view potentially problematic, hidden, comments. They must be able to reset their password from their settings page. 
+
 - Posting Comments
 
 A logged-in User must be able to post a new comment. The Server must be able to add that Comment to the comment data for the URL the User is commenting on, if the user is permitted to comment on that page.
 
+- Validating Comments and Usernames
+
+The Server must automatically evaluate Comments and Usernames to determine if they may contain words or phrases which violate our policies. They must prevent and remove comments that certainly violate the policies and flag and hide comments that may do so. It must prohibit the registration of usernames that contain prohibited words.
+
 - Reporting
 
-A logged-in User must be able to report a rule-breaking comment. The Server must be able to track which comments require moderation action.
+A logged-in User must be able to report a rule-breaking comment. The Server must be able to track which comments require moderation action. A logged-in User must also be able to report buggy pages.
 
 - Moderating
 
-A Domain Moderator or Global Moderator must be able to view all comments that have been flagged by Users as rule breaking. They must be able to remove rule breaking comments or clear flags if no action is required. 
+A Domain Moderator or Global Moderator must be able to view comments that have been flagged by Users as rule breaking. They must be able to remove rule breaking comments, take other actions, or clear flags if no action is required. 
+
+- Assigning Moderators
+
+A Global Moderator must be able to elevate a User to the status of Domain Moderator. An Admin must be able to assign Global Moderators. Similarily, an Admin must be able to remove Global Moderator permissions and Admins and Global Moderators must be able to remove Domain Moderator Permissions. The Server must be able to accurately evaluate permissions and allow or disallow actions based on those permissions.
 
 - Banning
 
-....
+Domain Moderators must be able to ban troublesome Users from their domain. The Server must not allow banned Users to post on that domain. Global Moderators must be able to ban Users globally or from a specific domain. Users must be able to appeal Bans and Admins must be able to review banning actions taken by Moderators. 
 
+- Reports
 
+Admins must be able to view reports on User Activity, Moderation Actions, and other metrics. 
 
+- Static Website
+
+There must be a website that provides a description of the project, download links for the Browser Extension, and instructions for installing and using the Browser Extension, which anyone on the internet can view.
 ## NonFunctional Requirements
 
-- User Capacity
+- Memory and Bandwidth Usage
 
-    We need to keep a low number of Users in our database so that we dont run out of space, After a select period of time we will log out the user's from the list of active users. A logged out user becomes a viewer no matter their rank and will have to log back in again to add themselves back to the database and become a user again.
+    The Server and Database must be optimized to minimize Memory and Bandwidth Usage as much as possible. We will likely be paying for cloud hosting and have no source of income throughout the Phase 1 roll out. Therefore, we will need to optimize our Server to keep our costs as low as possible so we can afford to make it to phase 2. To that end, we must implement caching and cache clearing, low cost threads, and offloading as much processing to the Front End as possible.
+
+- Documentation
+
+    After this initial roll out, we will be in Phase 1 of our Business Plan. During that Phase, we will continue to add features as we build a User Base. Effective code documentation is necessary to enable easily adding new features to Comment Anywhere.
 
 - Password security
-    We will also need to keep the passwords of our user's secure, we can do this by encrypting the users passwords and saving that to the spacific user. When a user wants to log on again and sign in with their password we will compare the encryption of the password to the encrypted password attached to the user and if the 2 encryptions match the user will be logged in.
 
-- Username Blacklist
-    There are some usernames that we need to blacklist from becoming users. when a user first creates their username or changes it we will be checked against a list of blacklisted words and if the username is blacklisted the name will not be made or changed.
+    We need to keep the passwords of our user's secure. We can do this by encrypting the users passwords before storage. Passwords will only be stored in their encrypted state and we will not have access to them. 
+
+- Username Policy
+
+    We need to have a username policy that describes which types of Usernames are prohibited.
+
+- Comment Policy
+
+    We need a Comment policy which describes which sorts of comments are prohibited or otherwise regulated. Our policy must be strict enough to comply with U.S. Law, but not so strict as to alienate our target user base, who prefer freer speech when possible.
+
+- Back Ups
+
+    Our system must be prepared for failures. We will need to create regular backups of our database so we can restore from past points without losing too much data when the system goes down.
 
 - General security
-    Our systems will need to have a general layer of security to our extention. We will create backups of our databases incase our security is breached.
+
+    We will need to take some steps to make the application secure. Generally, most security improvements will be saved until after the initial roll out but some things, such as basic SQL injection prevention and password encyption should be implemented by the initial roll out.
 
 - Appealing User Interface
-    Our user interface will need to be user friendly or else users will just not use the product. We will attempt to create a pleasing to the eye graphical user interface (gui) for every type of user. The viewers that only displays comments, users that can also comment themselves, local moderators that report user comments, global moderators that can appoint and remove local moderators and admins that can also appoint and remove global moderators.
+
+    Our user interface will need to be user friendly or else users will just not use the product. We will attempt to create a pleasing to the eye graphical user interface (gui).
 
 - Deployability
-    We will need to use various programs and programming languages in order to create comment anything. we will need to use resources such as  Docker and cloud hosting services to make a complete product.
+
+    Our build and deployment setup needs to be flexible enough to change hosting providers as our needs evolve. We can set up our build chain to use Containers, such as through Docker, allowing us to deploy our Product on a variety of cloud platforms, or through self-hosting. 
 
 - Legality
-    Our Program will have to be complient with united states standard law's. Weather that be in covering hate speech or protecting free speech or some arbitrary requirement for the product.
+
+    Our Program will have to be compliant with United States law. It must have a Privacy Policy and a Terms and Conditions that all Users agree to, to help mitigate lawsuits and other possible legal actions. 
 ## Documentation
 
 
