@@ -1,18 +1,24 @@
 -- Terms
 
-- Discord
-
-- Discord Webhooks
 
 - Git
 
+Git is free and open source software for distributed version control. [1]
+
+
 - GitHub
 
-- GitHub Organization
+An internet hosting service for software development and version control using Git. [2]
 
+- Version control
 
+Systems responsible for managing changes to source code and other collections of information. [3]
 
 
 -- References
+
+[1] https://en.wikipedia.org/wiki/Git
+[2] https://en.wikipedia.org/wiki/GitHub
+[3] https://en.wikipedia.org/wiki/Version_control
 
 

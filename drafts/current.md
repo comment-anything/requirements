@@ -27,10 +27,26 @@ Tying comments to social media posts rather than the content has the effect of f
 
 ## Objective
 
-The objective of this project is to create a web based browser extention to allow people to comment on websites based on their url. This is useful for websites that dont have comment sections or that are intentionally  misleading for people to make their own opinions out of without the pages author having a say. We will also have a automatic antimation system for spam comments and comments to harmful websites as well as a volentary moderation team to moderate these comments Wich will have a special ui for themselves as well for any administrators for the reporting and removing process of these comments and users. We hope to create a product that is able to hit the market and become the new way to comment on the internet free from those that want to stop the free flow of information.
+The objective of this project is to create a web based browser extention which allows people to comment on websites based on their url. This is useful for websites that dont have comment sections, especially when viewers have additional thoughts or information to offer. We will have typical features of commenting systems, including reporting, automated moderation, manual moderation, and account control and additional unique features. Our aim is to launch the product as a profitable business, and the goal of this project is to meet Phase 1 of our business plan.
 
+** Phase 1: Initial Rollout** 
+ - Less than 50,000 monthly users
+ - Goal is to garner interest and goodwill
+ - Engage with users, listen to feedback, implement feature requests
 
+** Phase 2: "Buy Me a Coffee"**
+ - Less than 200,000 monthl users
+ - Continue to build interest and goodwill
+ - Form corporation / LLC 
+ - Capitalize on goodwill via donations to offset costs
 
+** Phase 3: "Good Place to Advertise"**
+ - Roll out ad purchasing system
+ - Intersperse ads with comments on relevant content similar to google search results or reddit comments
+ - Ad Sales teams
+ - Scale 
+
+We hope to create a product that is able to hit the market and become the new way to comment on the internet free from those that seek to stop the free flow of information.
 ## Team Details & Dynamics
 
 Our team is git-committed and document driven with an eye to the business plan.
@@ -51,7 +67,7 @@ Every group member has committed to being the Team Leader for a portion of the p
 
 # Application Domain
 
-The application domain of Comment Anywhere is internet communication services. More specifically, the domain is internet users commenting and viewing comments about web pages.  [3] 
+The application domain of Comment Anywhere is internet communication services. More specifically, the domain is internet users commenting and viewing comments about web pages.  [6] 
 # Initial Business Model
 
 
@@ -105,7 +121,27 @@ A Domain Moderator or Global Moderator must be able to view all comments that ha
 
 ## NonFunctional Requirements
 
+- User Capacity
 
+    We need to keep a low number of Users in our database so that we dont run out of space, After a select period of time we will log out the user's from the list of active users. A logged out user becomes a viewer no matter their rank and will have to log back in again to add themselves back to the database and become a user again.
+
+- Password security
+    We will also need to keep the passwords of our user's secure, we can do this by encrypting the users passwords and saving that to the spacific user. When a user wants to log on again and sign in with their password we will compare the encryption of the password to the encrypted password attached to the user and if the 2 encryptions match the user will be logged in.
+
+- Username Blacklist
+    There are some usernames that we need to blacklist from becoming users. when a user first creates their username or changes it we will be checked against a list of blacklisted words and if the username is blacklisted the name will not be made or changed.
+
+- General security
+    Our systems will need to have a general layer of security to our extention. We will create backups of our databases incase our security is breached.
+
+- Appealing User Interface
+    Our user interface will need to be user friendly or else users will just not use the product. We will attempt to create a pleasing to the eye graphical user interface (gui) for every type of user. The viewers that only displays comments, users that can also comment themselves, local moderators that report user comments, global moderators that can appoint and remove local moderators and admins that can also appoint and remove global moderators.
+
+- Deployability
+    We will need to use various programs and programming languages in order to create comment anything. we will need to use resources such as  Docker and cloud hosting services to make a complete product.
+
+- Legality
+    Our Program will have to be complient with united states standard law's. Weather that be in covering hate speech or protecting free speech or some arbitrary requirement for the product.
 ## Documentation
 
 
@@ -155,7 +191,7 @@ The highest authority of moderation can do anything a global moderator can do an
 
 **Application Domain**
 
-The specific environment in which the product is to operate.  [3] Can be an organization, a department within an organization, or a single workspace.  [4] 
+The specific environment in which the product is to operate.  [6] Can be an organization, a department within an organization, or a single workspace.  [7] 
 
 **Back End **
 
@@ -163,7 +199,7 @@ A Back End is any part of a website or software program the users do not see. It
 
 **Cloud**
 
-"The cloud" refers to servers that are accessed over the Internet, and the software and databases that run on those servers. Cloud servers are located in data centers all over the world. By using cloud computing, users and companies do not have to manage physical servers themselves or run software applications on their own machines.  [9] 
+"The cloud" refers to servers that are accessed over the Internet, and the software and databases that run on those servers. Cloud servers are located in data centers all over the world. By using cloud computing, users and companies do not have to manage physical servers themselves or run software applications on their own machines.  [12] 
 
 **Comment**
 
@@ -171,31 +207,19 @@ A line of text created by any user can be replied to by other comments ,edited f
 
 **Database**
 
-A database is an organized collection of structured information, or data, typically stored electronically in a computer system. A database is usually controlled by a database management system (DBMS). Together, the data and the DBMS, along with the applications that are associated with them, are referred to as a database system, often shortened to just database.Data within the most common types of databases in operation today is typically modeled in rows and columns in a series of tables to make processing and data querying efficient. The data can then be easily accessed, managed, modified, updated, controlled, and organized. Most databases use structured query language (SQL) for writing and querying data.  [8] 
-
-**Discord**
-
-
-
-**Discord Webhooks**
-
-
+A database is an organized collection of structured information, or data, typically stored electronically in a computer system. A database is usually controlled by a database management system (DBMS). Together, the data and the DBMS, along with the applications that are associated with them, are referred to as a database system, often shortened to just database.Data within the most common types of databases in operation today is typically modeled in rows and columns in a series of tables to make processing and data querying efficient. The data can then be easily accessed, managed, modified, updated, controlled, and organized. Most databases use structured query language (SQL) for writing and querying data.  [11] 
 
 **Front End**
 
-The Front End of a software program is everything with which the user interacts. From a user standpoint, Front End is synonymous with the User Interface. The Front End of Comment Anywhere is the Browser Extension.  [11] 
+The Front End of a software program is everything with which the user interacts. From a user standpoint, Front End is synonymous with the User Interface. The Front End of Comment Anywhere is the Browser Extension.  [14] 
 
 **Git**
 
-
+Git is free and open source software for distributed version control.  [3] 
 
 **GitHub**
 
-
-
-**GitHub Organization**
-
-
+An internet hosting service for software development and version control using Git.  [4] 
 
 **Global Moderator**
 
@@ -203,7 +227,7 @@ Higher authority than a moderator can ban people from any domain or all domains 
 
 **Nonfunctional Requirement**
 
-Properties of the product such as platform constraints, response times, or reliability.  [12] 
+Properties of the product such as platform constraints, response times, or reliability.  [15] 
 
 **Requirements Engineering**
 
@@ -211,7 +235,7 @@ The process of defining, documenting, and maintaining requirements in the engine
 
 **Server**
 
-A program which waits for a request then performs some service for the requester and which runs on a computer other than the one on which the requestor/client runs.  [7] The Server used by Comment anywhere is an HTTP server because it processes HTTP requests on the Internet. 
+A program which waits for a request then performs some service for the requester and which runs on a computer other than the one on which the requestor/client runs.  [10] The Server used by Comment anywhere is an HTTP server because it processes HTTP requests on the Internet. 
 
 **User**
 
@@ -219,11 +243,15 @@ Anyone that has the browser extention installed on a browser, low level access t
 
 **User Interface**
 
-Also called a "UI" or "interface", a User Interface is the means in which a person controls a software application or hardware device.  [10] 
+Also called a "UI" or "interface", a User Interface is the means in which a person controls a software application or hardware device.  [13] 
+
+**Version control**
+
+Systems responsible for managing changes to source code and other collections of information.  [5] 
 
 **Virtual Machine**
 
-Also called a Container, a Virtual Machine is a compute resource that uses software instead of a physical computer to run programs and deploy apps. One or more virtual "guest" machines run on a physical "host" machine. Each virtual machine runs its own operating system and functions separately from the other VMs, even when they are all running on the same host.  [5] 
+Also called a Container, a Virtual Machine is a compute resource that uses software instead of a physical computer to run programs and deploy apps. One or more virtual "guest" machines run on a physical "host" machine. Each virtual machine runs its own operating system and functions separately from the other VMs, even when they are all running on the same host.  [8] 
 ## Team Details
 
 
@@ -241,22 +269,28 @@ Also called a Container, a Virtual Machine is a compute resource that uses softw
 
  [2] - https://www.poynter.org/ethics-trust/2021/dont-read-the-comments-for-news-sites-it-might-be-worth-the-effort/
 
- [3] - Schach, Stephen R., Object-Oriented and Classical Software Engineering, 8th edition.
+ [3] - https://en.wikipedia.org/wiki/Git
 
- [4] - Züllighoven, Heinz, Object-Oriented Construction Handbook, Chapter 6.3, 2005. https://www.sciencedirect.com/topics/computer-science/application-domain
+ [4] - https://en.wikipedia.org/wiki/GitHub
 
- [5] - https://www.vmware.com/topics/glossary/content/virtual-machine.html
+ [5] - https://en.wikipedia.org/wiki/Version_control
 
- [6] - https://techterms.com/definition/backend
+ [6] - Schach, Stephen R., Object-Oriented and Classical Software Engineering, 8th edition.
 
- [7] - http://www.catb.org/jargon/html/S/server.html
+ [7] - Züllighoven, Heinz, Object-Oriented Construction Handbook, Chapter 6.3, 2005. https://www.sciencedirect.com/topics/computer-science/application-domain
 
- [8] - https://www.oracle.com/database/what-is-database/
+ [8] - https://www.vmware.com/topics/glossary/content/virtual-machine.html
 
- [9] - https://www.cloudflare.com/learning/cloud/what-is-the-cloud/
+ [9] - https://techterms.com/definition/backend
 
- [10] - https://techterms.com/definition/frontend 
+ [10] - http://www.catb.org/jargon/html/S/server.html
 
- [11] - https://techterms.com/definition/user_interface
+ [11] - https://www.oracle.com/database/what-is-database/
 
- [12] - Schach, Stephen R., Object-Oriented and Classical Software Engineering, 8th edition.
+ [12] - https://www.cloudflare.com/learning/cloud/what-is-the-cloud/
+
+ [13] - https://techterms.com/definition/frontend 
+
+ [14] - https://techterms.com/definition/user_interface
+
+ [15] - Schach, Stephen R., Object-Oriented and Classical Software Engineering, 8th edition.
