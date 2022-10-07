@@ -1,0 +1,37 @@
+-- Terms
+
+- Guest
+A guest can browse content without a registered account. Guests cannot create content, nor interact with members.
+
+- Member
+Members can create and interact with public content while using a registered account.
+
+- Domain Moderator
+A domain moderator manages all comments under their assigned domain.
+
+- Global Moderator
+A global moderator manages all comments
+
+- Administrator
+An administrator has control over all comments, along with the ability to view logs and metrics.
+
+- User Privileges
+A status that indicates how much a user can interact with a service.
+
+- Inheritance Diagram
+A diagram that relates and identifies similar properties among multiple objects.
+
+- User Account
+User accounts are used to uniquely identify someone using a particular service.
+
+- Bug
+A mistake within a computer program that causes unexpected results.
+
+- Domain
+A domain is the name of a website.
+
+- Logs
+Logs are used by administrators to view the technical details of server events.
+
+- Metrics
+Data related to performance and access records.
