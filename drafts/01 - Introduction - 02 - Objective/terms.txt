@@ -1,0 +1,6 @@
+
+-- Terms
+
+- Moderation
+
+In the context of internet comments, Moderation is the regulation of comments that negatively impact the Product, such as by removal, hiding, or banning troublesome users.

@@ -186,7 +186,7 @@ class Section:
                 if match:
                     # if we were already reading a term, save that term
                     if current_term:
-                        terms[current_term] = current_term_text
+                        terms[current_term.strip()] = current_term_text
                     current_term = re.sub("\s*-\s*", "", line)
                     current_term_text = []
                     continue

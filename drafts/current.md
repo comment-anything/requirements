@@ -21,9 +21,9 @@ We describe the results of Software Requirement Engineering in a Waterfall model
 ## Background
 
 
-Internet denizens have long found ways to have vibrant communications about a wide variety of content. In the past, more website supported these conversations through comment sections, but many have closed their comments in recent years. Instead, the avenues of discourse have become social media sites such as Facebook, Reddit, and bulletin board style forums, decoupling the conversation from the content itself.
+Internet denizens have long found ways to have vibrant communications about a wide variety of content. In the past, more website supported these conversations through comment sections, but many have closed their comments in recent years. [2] Instead, the avenues of discourse have become social media sites such as Facebook, Reddit, and bulletin board style forums, decoupling the conversation from the content itself.
 
-Tying comments to social media posts rather than the content has the effect of fragmenting the conversation and diluting information available to viewers. Evidence exists that users spend less time on webpages without comments and report a worse user experience.  [2] We infer that there is a market for comments tied to content rather than posts and an application that can bring comments to the content could capture monetizable user engagement.
+Tying comments to social media posts rather than the content has the effect of fragmenting the conversation and diluting information available to viewers. Evidence exists that users spend less time on webpages without comments and report a worse user experience.  [3] We infer that there is a market for comments tied to content rather than posts and an application that can bring comments to the content could capture monetizable user engagement.
 
 ## Objective
 
@@ -255,15 +255,15 @@ The highest authority of moderation can do anything a global moderator can do an
 
 **Application Domain**
 
-The specific environment in which the product is to operate.  [6] Can be an organization, a department within an organization, or a single workspace.  [7] 
+The specific environment in which the product is to operate.  [7] Can be an organization, a department within an organization, or a single workspace.  [8] 
 
-**Back End **
+**Back End**
 
 A Back End is any part of a website or software program the users do not see. It contrasts with the Front End, which refers to a program or website's user interface.
 
 **Cloud**
 
-"The cloud" refers to servers that are accessed over the Internet, and the software and databases that run on those servers. Cloud servers are located in data centers all over the world. By using cloud computing, users and companies do not have to manage physical servers themselves or run software applications on their own machines.  [12] 
+"The cloud" refers to servers that are accessed over the Internet, and the software and databases that run on those servers. Cloud servers are located in data centers all over the world. By using cloud computing, users and companies do not have to manage physical servers themselves or run software applications on their own machines.  [13] 
 
 **Comment**
 
@@ -271,19 +271,19 @@ A line of text created by any user can be replied to by other comments ,edited f
 
 **Database**
 
-A database is an organized collection of structured information, or data, typically stored electronically in a computer system. A database is usually controlled by a database management system (DBMS). Together, the data and the DBMS, along with the applications that are associated with them, are referred to as a database system, often shortened to just database.Data within the most common types of databases in operation today is typically modeled in rows and columns in a series of tables to make processing and data querying efficient. The data can then be easily accessed, managed, modified, updated, controlled, and organized. Most databases use structured query language (SQL) for writing and querying data.  [11] 
+A database is an organized collection of structured information, or data, typically stored electronically in a computer system. A database is usually controlled by a database management system (DBMS). Together, the data and the DBMS, along with the applications that are associated with them, are referred to as a database system, often shortened to just database.Data within the most common types of databases in operation today is typically modeled in rows and columns in a series of tables to make processing and data querying efficient. The data can then be easily accessed, managed, modified, updated, controlled, and organized. Most databases use structured query language (SQL) for writing and querying data.  [12] 
 
 **Front End**
 
-The Front End of a software program is everything with which the user interacts. From a user standpoint, Front End is synonymous with the User Interface. The Front End of Comment Anywhere is the Browser Extension.  [14] 
+The Front End of a software program is everything with which the user interacts. From a user standpoint, Front End is synonymous with the User Interface. The Front End of Comment Anywhere is the Browser Extension.  [15] 
 
 **Git**
 
-Git is free and open source software for distributed version control.  [3] 
+Git is free and open source software for distributed version control.  [4] 
 
 **GitHub**
 
-An internet hosting service for software development and version control using Git.  [4] 
+An internet hosting service for software development and version control using Git.  [5] 
 
 **Global Moderator**
 
@@ -291,7 +291,7 @@ Higher authority than a moderator can ban people from any domain or all domains 
 
 **Nonfunctional Requirement**
 
-Properties of the product such as platform constraints, response times, or reliability.  [15] 
+Properties of the product such as platform constraints, response times, or reliability.  [16] 
 
 **Requirements Engineering**
 
@@ -299,7 +299,7 @@ The process of defining, documenting, and maintaining requirements in the engine
 
 **Server**
 
-A program which waits for a request then performs some service for the requester and which runs on a computer other than the one on which the requestor/client runs.  [10] The Server used by Comment anywhere is an HTTP server because it processes HTTP requests on the Internet. 
+A program which waits for a request then performs some service for the requester and which runs on a computer other than the one on which the requestor/client runs.  [11] The Server used by Comment anywhere is an HTTP server because it processes HTTP requests on the Internet. 
 
 **User**
 
@@ -307,17 +307,28 @@ Anyone that has the browser extention installed on a browser, low level access t
 
 **User Interface**
 
-Also called a "UI" or "interface", a User Interface is the means in which a person controls a software application or hardware device.  [13] 
+Also called a "UI" or "interface", a User Interface is the means in which a person controls a software application or hardware device.  [14] 
 
 **Version control**
 
-Systems responsible for managing changes to source code and other collections of information.  [5] 
+Systems responsible for managing changes to source code and other collections of information.  [6] 
 
 **Virtual Machine**
 
-Also called a Container, a Virtual Machine is a compute resource that uses software instead of a physical computer to run programs and deploy apps. One or more virtual "guest" machines run on a physical "host" machine. Each virtual machine runs its own operating system and functions separately from the other VMs, even when they are all running on the same host.  [8] 
+Also called a Container, a Virtual Machine is a compute resource that uses software instead of a physical computer to run programs and deploy apps. One or more virtual "guest" machines run on a physical "host" machine. Each virtual machine runs its own operating system and functions separately from the other VMs, even when they are all running on the same host.  [9] 
 ## Team Details
 
+This document was created by the team. We met several times in the Student Center to consult with each other as we worked. We utilized Discord to communicate and GitHub to manage project iterations.
+
+Specific contributions are as follows.
+
+Karl Miller created the project GitHub repository and wrote a python merge script to merge content and references from subfolders into a single large draft. He wrote the initial Abstract, Objective, Team Details & Dynamics, Operating Environment, Documentation, Testing Revisions, and Functional Requirements sections. He edited the Description of Data Sources and Nonfunctional Requirements.
+
+Luke Bates ....
+
+Frank Bedekovich....
+
+Robert Krency ....
 
 ## Workflow Authentication
 
@@ -331,30 +342,32 @@ Also called a Container, a Virtual Machine is a compute resource that uses softw
 
  [1] - https://www.javatpoint.com/software-engineering-requirement-engineering
 
- [2] - https://www.poynter.org/ethics-trust/2021/dont-read-the-comments-for-news-sites-it-might-be-worth-the-effort/
+ [2] - https://www.techdirt.com/2021/11/08/killing-website-comment-sections-wasnt-brilliant-move-many-newsroom-leaders-assumed/
 
- [3] - https://en.wikipedia.org/wiki/Git
+ [3] - https://www.poynter.org/ethics-trust/2021/dont-read-the-comments-for-news-sites-it-might-be-worth-the-effort/
 
- [4] - https://en.wikipedia.org/wiki/GitHub
+ [4] - https://en.wikipedia.org/wiki/Git
 
- [5] - https://en.wikipedia.org/wiki/Version_control
+ [5] - https://en.wikipedia.org/wiki/GitHub
 
- [6] - Schach, Stephen R., Object-Oriented and Classical Software Engineering, 8th edition.
+ [6] - https://en.wikipedia.org/wiki/Version_control
 
- [7] - Züllighoven, Heinz, Object-Oriented Construction Handbook, Chapter 6.3, 2005. https://www.sciencedirect.com/topics/computer-science/application-domain
+ [7] - Schach, Stephen R., Object-Oriented and Classical Software Engineering, 8th edition.
 
- [8] - https://www.vmware.com/topics/glossary/content/virtual-machine.html
+ [8] - Züllighoven, Heinz, Object-Oriented Construction Handbook, Chapter 6.3, 2005. https://www.sciencedirect.com/topics/computer-science/application-domain
 
- [9] - https://techterms.com/definition/backend
+ [9] - https://www.vmware.com/topics/glossary/content/virtual-machine.html
 
- [10] - http://www.catb.org/jargon/html/S/server.html
+ [10] - https://techterms.com/definition/backend
 
- [11] - https://www.oracle.com/database/what-is-database/
+ [11] - http://www.catb.org/jargon/html/S/server.html
 
- [12] - https://www.cloudflare.com/learning/cloud/what-is-the-cloud/
+ [12] - https://www.oracle.com/database/what-is-database/
 
- [13] - https://techterms.com/definition/frontend 
+ [13] - https://www.cloudflare.com/learning/cloud/what-is-the-cloud/
 
- [14] - https://techterms.com/definition/user_interface
+ [14] - https://techterms.com/definition/frontend 
 
- [15] - Schach, Stephen R., Object-Oriented and Classical Software Engineering, 8th edition.
+ [15] - https://techterms.com/definition/user_interface
+
+ [16] - Schach, Stephen R., Object-Oriented and Classical Software Engineering, 8th edition.
