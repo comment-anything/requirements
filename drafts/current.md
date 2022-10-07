@@ -79,6 +79,28 @@ The Front End will run in the browser engines of Chrome, Firefox, and other brow
 We will be getting many parts of our data from many different sources, first we will grab the url that the user is currently on and request the data for that webpages comment section. We will then see that request and grab the comment section from our database and display them to the user. When the user is ready, we will have the user log in to the extention. After the user enters their information into the extention we will verify if the user is actually the user as with all logins. There should be a few options for the user at this point the user can choose to either make a comment or reply to another comment, in the moderator's case they will also be able to report comments. If the user comments or reply's when the commenter posts their message to the database for the website url. If a moderator reports a comment the comment will move from the comments database to a removed comments database that only the moderators are able to see. The administrators as well as being able to do everything users and moderators can do is approve and select both global and regular moderators, they can also request and see who has approved the moderators and when for both global and local moderators. Global moderators are also able to request and see local moderators approval and time. Users can also be banned by moderators, regular moderators cana only ban users to the domain of the site they moderate while global and administrators can issue domain and full bans from all sites. When a user is banned their name is put into the domain bans database as well as where they were banned from who banned them and when.
 ## Use Case Diagrams
 
+// inheritance_diagram.png
+
+User privileges may be represented by this inheritance diagram. For instance, *members* inherit all *guest* abilities.
+
+// guest_diagram.png
+
+*Guests* do not need an account to view comments. However, they cannot interact with our services without logging into a registered account.
+
+// member_diagram.png
+
+*Members* may interact with our service by posting and responding to comments. Users may also report comments, view hidden comments, and report bugs.
+
+// domain_mod_diagram.png
+
+Domain moderators manage one or more assigned domains. They may access and remove reported comments, recategorize comments, and ban members. These actions are restricted to the assigned domain.
+// global_mod_diagram.png
+
+Global moderators manage all domains. Additionally, they can remove domain moderators.
+
+// admin_diagram.png
+
+Administrators manage all domains, remove global moderators, and view internal logs and metrics.
 
 # Initial Requirements
 
@@ -253,6 +275,8 @@ Finally, we simulated an acceptance test by taking the document to the Writing C
 
 The highest authority of moderation can do anything a global moderator can do and see their approval to global moderator
 
+
+
 **Application Domain**
 
 The specific environment in which the product is to operate.  [7] Can be an organization, a department within an organization, or a single workspace.  [8] 
@@ -260,6 +284,10 @@ The specific environment in which the product is to operate.  [7] Can be an orga
 **Back End**
 
 A Back End is any part of a website or software program the users do not see. It contrasts with the Front End, which refers to a program or website's user interface.
+
+**Bug**
+
+A mistake within a computer program that causes unexpected results.
 
 **Cloud**
 
@@ -272,6 +300,14 @@ A line of text created by any user can be replied to by other comments ,edited f
 **Database**
 
 A database is an organized collection of structured information, or data, typically stored electronically in a computer system. A database is usually controlled by a database management system (DBMS). Together, the data and the DBMS, along with the applications that are associated with them, are referred to as a database system, often shortened to just database.Data within the most common types of databases in operation today is typically modeled in rows and columns in a series of tables to make processing and data querying efficient. The data can then be easily accessed, managed, modified, updated, controlled, and organized. Most databases use structured query language (SQL) for writing and querying data.  [12] 
+
+**Domain**
+
+A domain is the name of a website.
+
+**Domain Moderator**
+
+A domain moderator manages all comments under their assigned domain.
 
 **Front End**
 
@@ -289,6 +325,24 @@ An internet hosting service for software development and version control using G
 
 Higher authority than a moderator can ban people from any domain or all domains can also see when a regular moderator was premoted and by who
 
+
+
+**Guest**
+
+A guest can browse content without a registered account. Guests cannot create content, nor interact with members.
+
+**Inheritance Diagram**
+
+A diagram that relates and identifies similar properties among multiple objects.
+
+**Logs**
+
+Logs are used by administrators to view the technical details of server events.
+
+**Member**
+
+Members can create and interact with public content while using a registered account.
+
 **Nonfunctional Requirement**
 
 Properties of the product such as platform constraints, response times, or reliability.  [16] 
@@ -305,9 +359,17 @@ A program which waits for a request then performs some service for the requester
 
 Anyone that has the browser extention installed on a browser, low level access to the program only able to comment, reply to comments and be premoted to a moderator global moderator or admin or banned by moderators and administrators either entirely or on a spacific domain.
 
+**User Account**
+
+User accounts are used to uniquely identify someone using a particular service.
+
 **User Interface**
 
 Also called a "UI" or "interface", a User Interface is the means in which a person controls a software application or hardware device.  [14] 
+
+**User Privileges**
+
+A status that indicates how much a user can interact with a service.
 
 **Version control**
 
@@ -324,7 +386,7 @@ Specific contributions are as follows.
 
 Karl Miller created the project GitHub repository and wrote a python merge script to merge content and references from subfolders into a single large draft. He wrote the initial Abstract, Objective, Team Details & Dynamics, Operating Environment, Documentation, Testing Revisions, and Functional Requirements sections. He edited the Description of Data Sources and Nonfunctional Requirements.
 
-Luke Bates ....
+Luke Bates designed and described the use case diagrams. He also added necessary terms to the appendix. 
 
 Frank Bedekovich....
 
